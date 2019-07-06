@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var x = "x";
+        var y = "y";
+        //OBJETOS ANTES
+        objAntes = {
+            x: x,
+            y: y
+        };
+        //OBJETOS AHORA
+        objNuevo={x,y};
+        console.log("antes: ", objAntes);
+        console.log("despues: ", objNuevo);
+        //OBJETOS CON FUNCION
+        objFuncion = {
+            suma(a, b) { return a+b},
+            multiplicacion(a,b){ return a*b}
+        }
+        console.log(objFuncion.suma(1,3));
+        console.log(objFuncion.multiplicacion(6,6));
+        //OBJETO CALCULADO
+        objCalc = {
+            obj : x+y,
+            [ "id" + 1 ] : "hola"
+        }
+        console.log(objCalc);
+        // FUNCION ASSING DE OBJETOS
+        obj1 = { x : 1};
+        obj2 = { y : 2};
+        obj3 = { z : 3};
+        obj = Object.assign(obj1,obj2,obj3);
+        console.log(obj);
+        console.log(obj1);
+        console.log(obj2);
+        console.log(obj3);
+    </script>
+</body>
+</html>

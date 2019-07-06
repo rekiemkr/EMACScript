@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>ARROW</title>
+</head>
+<body>
+    <script>
+
+        // FUNCION NORMALITA //
+        var x = function holaMundo(){
+            return "Hola Mundo";
+        }
+        console.log(x());
+
+        //  FAT ARROW //
+        var xArrow = (a) => a;
+        console.log(xArrow('FatArrow'));
+
+        // MAS DE DOS PARAMETROS
+        var xArrow2 = (a,b) => a+b;
+        console.log(xArrow2(2,2));
+
+        // SIN NINGUN PARAMETRO
+        var xArrowZero = () => 'Hola' + ' ' + 'Mundo';
+        console.log(xArrowZero());
+
+        // CON MAS DE UNA OPERACION
+        var xArrowMultiple = () => { console.log('Hola'); console.log(' '); console.log('Mundo')};
+        xArrowMultiple();
+    </script>
+</body>
+</html>

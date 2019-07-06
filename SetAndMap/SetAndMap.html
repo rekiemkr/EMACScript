@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Maps and sets</title>
+</head>
+<body>
+    <script>
+        var varSet = new Set();
+        varSet.add("Hello");
+        varSet.add("World");
+        varSet.add("EMACscript");
+        varSet.add("Hello");
+        console.log(varSet);
+        console.log(varSet.has("EMACscript"));
+        var varMap = new Map();
+        varMap.set("HOLA","Mundo");
+        for (const elem of varMap.keys()) {
+            console.log(elem);
+        }
+        console.log(varMap.get("HOLA"));
+        console.log(varMap);
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Funciones Generadoras</title>
+</head>
+<body>
+    <script>
+    /* YIELD RETORNA UN VALOR SIN FINALIZAR LA FUNCION */
+    function* generadora(a, incremento){
+        while(true){
+            yield a;
+            a = a + incremento;
+        }
+    }
+    // for( i of generadora(0,10,2)){
+    //     console.log(i);
+    // }
+    /* AL LLAMAR AL NEXT SE ENTIENDE QUE LA FUNCION NO HA TERMINADO */
+    var pares = generadora(0, 2);
+    console.log(pares);
+    console.log(pares.next().value);
+    console.log(pares.next().value);
+    console.log(pares.next().value);
+    console.log(pares.next().value);
+    console.log(pares.next().value);
+    console.log(pares.next().value);
+    console.log(pares.return());
+    console.log(pares.next().value);
+    </script>
+</body>
+</html>

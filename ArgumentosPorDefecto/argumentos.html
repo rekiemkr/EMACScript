@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Argumentos por defecto en funciones</title>
+</head>
+<body>
+    <script>
+    //FUNCION CON UN PARAMETRO POR DEFECTO
+        function unParametro(a = 1){
+            return a;
+        }
+        console.log(unParametro());
+        console.log(unParametro(5));
+    //FUNCION CON SOLO UN PARAMETRO POR DEFECTO
+        function dosParametros(a,b= 5){
+            return a*b;
+        }
+        console.log(dosParametros(100));
+        console.log(dosParametros(100,2));
+    </script>
+</body>
+</html>
